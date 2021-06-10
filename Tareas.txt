@@ -1,0 +1,4 @@
+Semana 1: 
+    1-crear ua funcion de operaciones matematicas donde el tercer parametrosea la opeacion a realizar (calculadora) condicionales 
+    2-realizar una funcion que calcule los primeros n numeros de la serie de fibonachi con una funcion - loop-iteraciones
+    3-escribir las funciones para calcular el area de: un circulo, un cuadrado ,un rectangulo y un ovalo 
