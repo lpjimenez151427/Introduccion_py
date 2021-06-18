@@ -4,7 +4,7 @@ n1, n2 = 0, 1
 count = 0
 
 if Ndeserie <= 0:
-   print("Por favor ingrese el valor requerido")
+   print("Por favor ingrese el valor positivo")
 elif Ndeserie == 1:
    print("El resultado es ",Ndeserie,":")
    print(n1)
