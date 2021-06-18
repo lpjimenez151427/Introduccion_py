@@ -12,7 +12,11 @@ def mul(a,b):
     return resultado
     
 def div(a,b):
+    if b == 0:
+        print("Error no es posible divir en 0")
+        return 
     resultado= a/b
+    #### revisar que b  sea diferente de 0
     return resultado 
 
 print("Marque el numero correspondiente a la operacion.")
