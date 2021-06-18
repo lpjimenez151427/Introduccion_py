@@ -19,30 +19,25 @@ def div(a,b):
     #### revisar que b  sea diferente de 0
     return resultado 
 
-print("Marque el numero correspondiente a la operacion.")
-print("1.sum")
-print("2.res")
-print("3.mul")
-print("4.div")
+print("Seleccione una operacion")
+operaciones_validas=('+', '-', '*', '/','-1')
+print(operaciones_validas)
 
 while True:
-    choice = input("Numero seleccionado: ")
-
-    if choice in ('1', '2', '3', '4'):
+    choice = input("")
+    if choice =='-1':
+        break
+    if choice in operaciones_validas:
         num1 = float(input("Introdusca el primer valor : "))
         num2 = float(input("Introdusca el segundo valor: "))
-
-        if choice == '1':
-            print(num1, "+", num2, "=", sum(num1, num2))
-
-        elif choice == '2':
-            print(num1, "-", num2, "=", res(num1, num2))
-
-        elif choice == '3':
-            print(num1, "*", num2, "=", mul(num1, num2))
-
-        elif choice == '4':
-            print(num1, "/", num2, "=", div(num1, num2))
-        break
+        if choice == '+':
+            resultado =sum(a=num1, b=num2)
+        elif choice == '-':
+            resultado =res(num1, num2)
+        elif choice == '*':
+            resultado=mul(num1, num2) 
+        elif choice == '/':
+            resultado= div(num1, num2)
+        print("{0} {1} {2} = {3} ".format(num1,choice,num2,resultado))          
     else:
         print("Error")
